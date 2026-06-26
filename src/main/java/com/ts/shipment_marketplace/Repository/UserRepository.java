@@ -8,4 +8,6 @@ import com.ts.shipment_marketplace.Entity.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
 
+	Object findByUsername(String username);
+
 }
